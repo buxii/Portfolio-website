@@ -14,3 +14,6 @@ The visual design of the website reflects a minimalistic and professional style.
 
 ## Link to my Figma project
 https://www.figma.com/design/jEPz8d2euRj2EAqe5WLqqG/Aniol-Buxeda's-Portfolio-Website-Style
+
+## Live Demo
+You can view the live version of the project here: https://buxii.github.io/Portfolio-website/
