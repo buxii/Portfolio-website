@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniol Buxeda - One Page Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Section 1: Index -->
+    <section id="index-section" class="section full-screen no-scroll">
+        <!-- Content Section with CV and Projects -->
+        <div class="content">
+            <div class="item">
+                <a href="#about-section">
+                    <img src="data/my_picture.png" alt="Aniol Buxeda" class="profile-pic large">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#projects-section">
+                    <img src="data/my_projects.png" alt="Aniol's Projects" class="profile-pic large">
+                </a>
+            </div>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="social-container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/aniol-buxeda-pascual-400299302/" target="_blank">
+                    <img src="data/linkedin_icon.png" alt="LinkedIn" class="icon">
+                </a>
+                <a href="https://github.com/buxii" target="_blank">
+                    <img src="data/github_icon.png" alt="GitHub" class="icon">
+                </a>
+                <a href="https://www.blogger.com/profile/12345678901234567890" target="_blank">
+                    <img src="data/blogger_icon.png" alt="Blogger" class="icon">
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Button to About Section -->
+        <div class="scroll-down">
+            <a href="#about-section">↓ Scroll Down</a>
+        </div>
+    </section>
+
+    <!-- Section 2: About (CV) -->
+    <section id="about-section" class="section full-screen no-scroll">
+        <header class="header-bar">
+            <h1>Aniol Buxeda Pascual</h1>
+            <p>Computer Engineering Student</p>
+        </header>
+        <div class="about-grid">
+            <div class="container" onclick="showPopup('about')">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="container" onclick="showPopup('contact')">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="container" onclick="showPopup('languages')">
+                <h2>LANGUAGES</h2>
+            </div>
+            <div class="container" onclick="showPopup('skills')">
+                <h2>SKILLS</h2>
+            </div>
+            <div class="container" onclick="showPopup('education')">
+                <h2>ACADEMIC BACKGROUND</h2>
+            </div>
+            <div class="container" onclick="showPopup('experience')">
+                <h2>EXPERIENCE</h2>
+            </div>
+        </div>
+        <!-- Scroll Buttons -->
+        <div class="scroll-up">
+            <a href="#index-section">↑ Scroll Up</a>
+        </div>
+        <div class="scroll-down">
+            <a href="#projects-section">↓ Scroll Down</a>
+        </div>
+    </section>
+    
+    <!-- Pop-up Window -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div id="popup-text"></div>
+        </div>
+    </div>     
+
+    <!-- Section 3: Projects -->
+    <section id="projects-section" class="section full-screen no-scroll">
+        <header class="header-bar">
+            <h1>My Projects</h1>
+            <p>A showcase of my work and GitHub repositories</p>
+        </header>
+        
+        <!-- Projects Grid -->
+        <section id="projects-grid" class="projects-grid">
+            <div class="project-container" onclick="window.open('https://github.com/buxii/Portfolio-website', '_blank')">
+                <h2>MY PORTFOLIO WEBSITE</h2>
+                <div class="language-list">
+                    <span class="language-dot lua"></span> HTML
+                    <span class="language-dot python"></span> CSS
+                    <span class="language-dot javascript"></span> JavaScript
+                </div>
+            </div>
+            <div class="project-container" onclick="window.open('https://github.com/udg-propro-spring-2024/projecte-b2', '_blank')">
+                <h2>PROPRO FINAL PROJECT</h2>
+                <div class="language-list">
+                    <span class="language-dot java"></span> Java 
+                    <span class="language-dot lua"></span> HTML
+                    <span class="language-dot python"></span> CSS
+                </div>
+            </div>
+            <div class="project-container" onclick="window.open('https://github.com/buxii/dotfiles-archlinux', '_blank')">
+                <h2>MY ARCH LINUX SET UP</h2>
+                <div class="language-list">
+                    <span class="language-dot lua"></span> Lua
+                    <span class="language-dot shell"></span> Shell
+                    <span class="language-dot python"></span> Python 
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scroll Buttons -->
+        <div class="scroll-buttons">
+            <a href="#about-section" class="scroll-up">↑ Scroll Up</a>
+            <a href="#index-section" class="scroll-down">↑ Go Home</a>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
